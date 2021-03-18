@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bad BAN Bot API</title>
+    <style>
+        html,
+        body {
+            background-color: #222;
+            color: white;
+        }
+
+        footer {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: right;
+            padding-right: 10px;
+        }
+        .hr{
+            width: 10%;
+            left: 0;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bad BAN Bot API</h1>
+    <hr>
+    <p>An API for the Bad BAN Bot database access</p>
+    <p>Message mirandaniel#3515 for an api key</p>
+    <hr>
+    <div>
+        <div>
+            
+            <pre style="color: greenyellow;">GET</pre>
+            <pre>/api/search</pre>
+            <h4 style="font-style: italic;">Shows wallet records in database</h4>
+            <p>Arguments:</p>
+            <pre>?wallet=</pre>
+            <pre>?apikey=</pre>
+            <p>Example:</p>
+            <pre>/api/search?wallet=ban_1aws637mb3qnuf9j8swzufq3nj3fttuzkixbd817nmmhyms6a6kt1zyptq87?apikey=mykey123</pre>
+            <p>Returned data:</p>
+            <pre>[{"type":"scam", "reason": "scammed someone"}]</pre>
+        </div>
+        <hr class="hr">
+        <div>
+            <pre style="color: greenyellow;">GET</pre>
+            <pre>/api/view</pre>
+            <h4 style="font-style: italic;">Shows number of records in database</h4>
+            <p>Arguments:</p>
+            <pre>?apikey=</pre>
+            <p>Example:</p>
+            <pre>/api/view?apikey=mykey123</pre>
+            <p>Returned data:</p>
+            <pre>{"records": 15}</pre>
+        </div>
+        <!--
+        <hr class="hr">
+        <div>
+            <pre style="color: orange;">POST</pre>
+            <pre>/api/add</pre>
+            <h4 style="font-style: italic;">Adds a wallet to the database</h4>
+            <p>Arguments:</p>
+            <pre>?wallet=</pre>
+            <pre>?type=</pre>
+            <pre>?reason=</pre>
+            <pre>?apikey=</pre>
+            <p>Example:</p>
+            <pre>/api/add?wallet=ban_1aws637mb3qnuf9j8swzufq3nj3fttuzkixbd817nmmhyms6a6kt1zyptq87?type=scam?reason=scammed someone?apikey=mykey123</pre>
+        </div>
+        <hr class="hr">
+        <div>
+            <pre style="color: orange;">POST</pre>
+            <pre>/api/remove</pre>
+            <h4 style="font-style: italic;">Removes a wallet from the database</h4>
+            <p>Arguments:</p>
+            <pre>?wallet=</pre>
+            <pre>?type=</pre>
+            <pre>?reason=</pre>
+            <pre>?apikey=</pre>
+            <p>Example:</p>
+            <pre>/api/remove?wallet=ban_1aws637mb3qnuf9j8swzufq3nj3fttuzkixbd817nmmhyms6a6kt1zyptq87?type=scam?reason=scammed someone?apikey=mykey123</pre>
+        </div>
+        -->
+    </div>
+    <footer>
+        <div style="color: rgb(255, 0, 0);">
+            <p>Donation address:</p>
+            <pre style="font-size: 17px;">ban_1aws637mb3qnuf9j8swzufq3nj3fttuzkixbd817nmmhyms6a6kt1zyptq87</pre>
+            <p>donations help keep this project running</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
